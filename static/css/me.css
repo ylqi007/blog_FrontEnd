@@ -61,6 +61,11 @@ body {
     padding-right: 3em !important;
 }
 
+.padded {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
 
 /*margin*/
 .m-margin-top-small {
@@ -160,6 +165,11 @@ body {
     display: none !important;
 }
 
+.m-shadow-small {
+    -webkit-box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2) !important;;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2) !important;
+}
+
 @media screen and (max-width: 768px) {
     .m-mobile-hide {
         display: none !important;
@@ -168,6 +178,10 @@ body {
         display: block !important;
     }
     .m-padded-lr-responsive {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-mobile-lr-clear {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
