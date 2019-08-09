@@ -499,7 +499,7 @@ h5,h6{font-size:1em;}
             </div>
 
 <!--            comment-->
-            <div class="ui bottom attached segment">
+            <div id="comment-container" class="ui bottom attached segment">
                 <div class="ui teal segment">
                     <div class="ui comments">
                         <h3 class="ui dividing header">Comments</h3>
@@ -605,6 +605,21 @@ h5,h6{font-size:1em;}
 <br>
 <br>
 
+<div class="m-padded-small m-fixed m-right-bottom">
+    <div class="ui vertical icon buttons">
+        <button type="button" class="ui toc teal button">目录</button>
+        <a href="#comment-container" class="ui teal button">留言</a>
+        <button class="ui icon button"><i class="wechat icon"></i></button>
+        <a href="#" class="ui button"><i class="chevron up icon"></i></a>
+    </div>
+</div>
+
+<div class="ui toc-container flowing popup top transition hidden">
+    生成目录
+</div>
+
+<br>
+<br>
 <!--底部-->
     <footer class="ui inverted vertical segment m-padded-tb-massive">
         <div class="ui center aligned container">
@@ -663,6 +678,12 @@ h5,h6{font-size:1em;}
         popup: $('.payQR.popup'),
         on: 'click',
         position: 'bottom center'
+    });
+
+    $('.toc.button').popup({
+        popup: $('.toc-container.popup'),
+        on: 'click',
+        position: 'left center'
     });
 </script>
 
